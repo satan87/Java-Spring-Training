@@ -18,7 +18,11 @@ public class ScopeTraining {
     for (int i = 0; i < 5; i++) {
       String localScope = String.valueOf(i);  // localScope, and i can only be used inside the for loop.
     }
-    
+
   }
 
+  // The GETTER allows other class to access our private value
+  public String getClassVariable() {
+    return classVariable;
+  }
 }
