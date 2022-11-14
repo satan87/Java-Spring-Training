@@ -131,8 +131,8 @@ It allows to declare that a variable can be null.  It is meant to avoid nNullPoi
 Optional < String > string = Optional.of( ... );
 
 The variable string can have 3 states:
-- It contains a value
-- It contains no value
+- It contains a value (which can be the value null)
+- It contains no value (it is empty)
 - It is null
 
 *Attention* : NULL and EMPTY are different state for Optional.
