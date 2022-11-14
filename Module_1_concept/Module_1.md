@@ -135,9 +135,9 @@ The variable string can have 3 states:
 - It contains no value
 - It is null
 
-Attention : NULL and EMPTY are different state for Optional.
+*Attention* : NULL and EMPTY are different state for Optional.
 
-Attention: null is an ecceptable value for an Optional
+*Attention*: null is an ecceptable value for an Optional
 
 
     Optional<String> nullOptional = null;
@@ -150,6 +150,11 @@ Attention: null is an ecceptable value for an Optional
     String n = null;
     Optional<String> nullString = Optional.ofNullable(n);
     System.out.println(nullString); // print Optional.empty
+
+
+Optional are very useful when dealing with potention missing information like database request.
+
+
 
 
 ## Lambda
