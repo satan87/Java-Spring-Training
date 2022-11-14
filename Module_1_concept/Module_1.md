@@ -128,7 +128,7 @@ Optional is a new Java type.
 
 It allows to declare that a variable can be null.  It is meant to avoid nNullPointerException.
 
-Optional<String> string = Optional.of( ... );
+Optional < String > string = Optional.of( ... );
 
 The variable string can have 3 states:
 - It contains a value
