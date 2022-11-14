@@ -124,7 +124,32 @@ Exercise with return.
 ## Optional
 
 
+Optional is a new Java type. 
 
+It allows to declare that a variable can be null.  It is meant to avoid nNullPointerException.
+
+Optional<String> string = Optional.of( ... );
+
+The variable string can have 3 states:
+- It contains a value
+- It contains no value
+- It is null
+
+Attention : NULL and EMPTY are different state for Optional.
+
+Attention: null is an ecceptable value for an Optional
+
+
+    Optional<String> nullOptional = null;
+    System.out.println(nullOptional); // print null
+    if (nullOptional.isPresent()) { // Will throw an error : Cannot invoke "java.util.Optional.isPresent()" because "nullOptional" is null
+      System.out.println("is present");
+    }
+
+
+    String n = null;
+    Optional<String> nullString = Optional.ofNullable(n);
+    System.out.println(nullString); // print Optional.empty
 
 
 ## Lambda
