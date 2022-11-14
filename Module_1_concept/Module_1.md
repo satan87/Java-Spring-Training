@@ -94,9 +94,36 @@ See example ...
 
 ## Ternary
 
+The ternary operator is a quick way to handle IF cases.
+
+You can use the ternary operator when you want to atribute a value to a variables, or return a value.
+
+Example:
+
+String string = "";
+
+if (a == 1) {
+  string = "one";
+} else {
+  string = "not one";
+}
+
+This can be simplify 
+
+String string  = (a == 1) ? "one" : "not one";
+
+the ? signifies THEN
+
+the : signifies ELSE
+
+
+Exercise with return.
+
 
 
 ## Optional
+
+
 
 
 
