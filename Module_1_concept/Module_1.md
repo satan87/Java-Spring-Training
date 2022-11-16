@@ -203,7 +203,8 @@ The function will see are:
 - Filter
 - Reduce
 
-To follow the flow from old type loop to stream, please refer to [html](lambda.html)
+To follow the flow from old type loop to stream, please refer to [html](https://raw.githack.com/satan87/Java-Spring-Training/main/Module_1_concept/lambda.html)
+
 
 
 </details>
