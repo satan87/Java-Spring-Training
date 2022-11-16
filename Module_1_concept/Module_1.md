@@ -17,7 +17,7 @@ To read that bytecode, you need a Java Virtual Machine (JVM).
 
 <details>
 
- <summary>Here</summary>
+ <summary>See</summary>
 
 
 Java now releases a new version every six (6) month.
@@ -83,6 +83,10 @@ Next LST will be Java 21 (September 2023)
 
 ## Variable Scope
 
+<details>
+
+ <summary>See</summary>
+
 The scope of a variable define where in the code a variable can be used.
 
 There are three (3) scopes:
@@ -98,8 +102,15 @@ There are three (3) scopes:
 
 See example ...
 
+</details>
+
 
 ## Ternary
+
+<details>
+
+ <summary>See</summary>
+
 
 The ternary operator is a quick way to handle IF cases.
 
@@ -126,9 +137,14 @@ the : signifies ELSE
 
 Exercise with return.
 
+</details>
 
 
 ## Optional
+
+<details>
+
+ <summary>See</summary>
 
 
 Optional is a new Java type. 
@@ -162,8 +178,14 @@ The variable string can have 3 states:
 Optional are very useful when dealing with potention missing information like database request.
 
 
+</details>
 
 ## Lambda
+
+<details>
+
+ <summary>See</summary>
+
 
 Lambdas have been around since Java 8.
 
@@ -193,7 +215,6 @@ To follow the flow from old type loop to stream, please refer to below table.
 |    |               |                                                                                                                         |                                                             |                                                              |                                                           |                                                                                               |                                                                                                                                                                                                 |                                              |
 |    |               |                                                                                                                         |                                                             |                                                              |                                                           |                                                                                               |                                                                                                                                                                                                 |                                              |
 
-
-
+</details>
 
 
