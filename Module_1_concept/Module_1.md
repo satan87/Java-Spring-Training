@@ -76,7 +76,7 @@ Long Term Support (LTS) versions are main version supposed to stay and be mainta
 
 Next LST will be Java 21 (September 2023)
 
-[wiki | https://en.wikipedia.org/wiki/Java_version_history]
+[Wiki](https://en.wikipedia.org/wiki/Java_version_history)
 
 </details>
 
@@ -195,7 +195,7 @@ With lambdas, functions become its own object and can be a return type, or a par
 
 Lmabdas works great with the API Stream Interface in Java. It allows you to go through collections with minimum code.
 
-[Stream Javadoc|https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html]
+[Javadoc](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)
 
 The function will see are:
 - Map
@@ -203,17 +203,8 @@ The function will see are:
 - Filter
 - Reduce
 
-To follow the flow from old type loop to stream, please refer to below table.
+To follow the flow from old type loop to stream, please refer to [html](lambda.html)
 
-| ID | CONCEPT       |                                                                                                                         | PRO                                                         | CON                                                          | CHAINABLE                                                 | USE                                                                                           | EXAMPLE                                                                                                                                                                                         | RESULT                                       |
-|----|---------------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| 0  | No loop       | Easiest method, copy/paste de the code                                                                                  | Easy, for beginer                                           | Duplicated code                                              | NO                                                        | NEVER                                                                                         | System. out .println( "Apple" ) ; System. out .println( "Peach" ) ;                                                                                                                             | Apple Peach                                  |
-| 2  | FOR loop      | Classic for loop Uses an index to go throught the array                                                                 | Easy to code                                                | Verbose code  Not always easy to read                        | NO                                                        | First time to make the code work  Always refactor                                             | for  (int i = 0; i < 10 ; i++) {    System.out.println("I = " + i);}                                                                                                                            | 1 2 ... 10                                   |
-| 3  | FOR EACH loop | Use the shorter version of the classic FOR loop                                                                         | Short code Easy to recognize                                | Modify the array  Less readibale to use with longer function | NO                                                        | For small operation only                                                                      | List. of(1, 2, 3).forEach(i -> System.out.println("I = " + i));                                                                                                                                 | 1 2 3                                        |
-| 4  | MAP           | Use of Higher Order Function to Transform each element The result will have the number of element as the original array | Less code to write  Do not modify the arrayEasily readibale | Take a bit of practice to use                                | YES  Before: MAP / FILTER / REDUCE    After: MAP / FILTER | To use/transform every element of the array    Look for FOR in the code, and replace with MAP | // With direct Code List<Integer> doubles = Stream.of(1, 2, 3).map( i -> i * 2 ).toList();// With Action :List<String> upperCased = Stream.of("a", "b", "c").map(String::toUpperCase).toList(); | doubles =  [2, 4, 6]  upperCased = [A, B, C] |
-|    |               |                                                                                                                         |                                                             |                                                              |                                                           |                                                                                               |                                                                                                                                                                                                 |                                              |
-|    |               |                                                                                                                         |                                                             |                                                              |                                                           |                                                                                               |                                                                                                                                                                                                 |                                              |
-|    |               |                                                                                                                         |                                                             |                                                              |                                                           |                                                                                               |                                                                                                                                                                                                 |                                              |
 
 </details>
 

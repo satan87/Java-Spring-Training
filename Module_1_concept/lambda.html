@@ -1,0 +1,236 @@
+<html>
+
+  <body>
+    <div>
+      <h1>Java - Loop and Lambda</h1>
+
+      <br />
+      We'll try to display a list of friuts.
+      <br />
+      <div>
+        The array is:
+      </div>
+    </div>
+
+    <table border="1" width="100%">
+      <tr>
+        <th>ID</th>
+        <th>Concept</th>
+        <th>Comment</th>
+        <th>Pro</th>
+        <th>Con</th>
+        <th>Chainable</th>
+        <th>When To Use</th>
+        <th>Example</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>No Loop</td>
+        <td>Easiest method, copy/paste de the code</td>
+        <td>Easy</td>
+        <td>No Loop - Duplicated code</td>
+        <td>NO</td>
+        <td>Never</td>
+        <td>
+          <code>
+            System. out .println( "Apple" ); <br />
+            System. out .println( "Peach" );
+          </code>
+        </td>
+        <td>
+          Apples
+          <br />
+          Peaches
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>FOR</td>
+        <td>
+          Classic for loop <br />
+          Uses an index to go throught the array
+        </td>
+        <td>Easy to code</td>
+        <td>
+          Verbose code <br />
+          Not always easy to read <br />
+          Slower than other method
+        </td>
+        <td>NO</td>
+        <td>
+          First time to make the code work<br />
+          <b>Always refactor</b>
+        </td>
+        <td>
+          <code>
+            for  (int i = 0; i < foods.size() ; i++) { <br>
+            &emsp; System.out.println(foods.get(i)); <br>
+            }<br>
+          </code
+          >
+        </td>
+        <td>
+          Apples<br />
+          Peaches<br />
+          ...<br />
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>FOR EACH</td>
+        <td>
+          Use the shorter version of the classic FOR loop<br />
+        </td>
+        <td>Short code<br />
+        Easy to recognize
+      </td>
+        <td>
+          Modify the array <br />
+          Less readibale to use with longer function<br />
+        </td>
+        <td>NO</td>
+        <td>For small operation only (like display/console)</td>
+        <td>
+          <code>
+            foods.forEach(food -> System.out.println(food));
+          </code>
+        </td>
+        <td>
+          Apples<br />
+          Peaches<br />
+          ...<br />
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>MAP</td>
+        <td>
+          Use of Higher Order Function to Transform each element<br />
+          <b>The result will have the number of element as the original array</b
+          ><br />
+        </td>
+        <td>
+          Less code to write <br />
+          Do not modify the array<br />
+          Easily readibale<br />
+        </td>
+        <td>Take a bit of practice to use</td>
+        <td>
+          YES <br />
+          Before: MAP / FILTER / REDUCE <br />
+          After: MAP / FILTER
+        </td>
+        <td>
+          To iterate over array <br />
+          <b> Look for FOR in the code, and replace with MAP</b>
+        </td>
+        <td>
+          <code>
+        // With direct Code <br>
+        List&#60;Integer&#62; doubles = Stream.of(1, 2, 3).map( i -> i * 2 ).toList(); <br> <br>
+          // With Action <br>
+          List&#60;String&#62; upperCased = Stream.of("a", "b", "c").map(String::toUpperCase).toList();<br>
+          <c/ode>
+        </td>
+        <td>
+        doubles =  [2, 4, 6] <br>
+          upperCased = [A, B, C] <br>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>FILTER</td>
+        <td>
+          Use of Higher Order Function to Select, or not, Element<br />
+          <b>
+            The result will be an array of x elements, x between 0 and the
+            number of element of the original array</b
+          ><br />
+        </td>
+        <td>
+          Less code to write <br />
+          Do not modify the array<br />
+          Easily readibale<br />
+        </td>
+        <td>Take a bit of practice to use</td>
+        <td>
+          YES <br />
+          Before: MAP / FILTER / REDUCE <br />
+          After: MAP / FILTER
+        </td>
+        <td>
+          To filter array <br />
+          <b> Look for FOR ... IF in the code, and replace with FILTER</b>
+        </td>
+        <td>
+          <code>
+
+            List&#60;Integer&#62; evens = Stream.of(1, 2, 3, 4, 5, 6).filter(n -> n % 2 == 0).toList(); <br>
+
+          </code>
+        </td>
+        <td>[2, 4, 6]</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>REDUCE</td>
+        <td>
+          Use of Higher Order Function to 'AGGREGATE' element<br />Most of the
+          time use with SUM, or other mathematical operation<br />
+          <b>REDUCE will return only ONE VALUE (not an array)</b><br />
+
+        </td>
+        <td>Allow use of MAP / FILTER to aggregate data</td>
+        <td>Not easy to understand/use</td>
+        <td>
+          PARTIALLY <br />
+          Before: NO <br />
+          After: MAP / FILTER<br />
+          <b>REDUCE HAS TO BE the last operation of the command</b>
+        </td>
+        <td>
+          To aggregate array <br />
+          <b> Look for FOR ... SUM =+ in the code, and replace with REDUCE</b>
+        </td>
+        <td>
+<code> Integer total = Stream.of(1, 2, 3, 4, 5).reduce(0, Integer::sum); </code>code
+        </td>
+        <td>15<br />(sum of [ 1, 2, 3, 4, 5 ])</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>FLATMAP</td>
+        <td>
+          Use of Higher Order Function to 'FLATTEN'an array<br />
+        </td>
+        <td>Similar to MAP</td>
+        <td>
+          Not easy to understand/use<br />
+          <b> ATTENTION: It will flatten only one level!</b>
+        </td>
+        <td>
+          YES <br />
+          Before: MAP / FILTER / REDUCE <br />
+          After: MAP / FILTER
+        </td>
+        <td>
+          To flatten an array <br />
+          [[x, y],[z, a]] will become [x, y, z, a]
+        </td>
+        <td>
+          <code>
+            List&#60;Integer&#62; oneList = List.of(List.of(1, 2), List.of(3, 4)).stream().flatMap(List::stream).toList();
+            </code
+          >
+        </td>
+        <td>
+          [1, 2, 3, 4]<br />
+        </td>
+      </tr>
+    </table>
+
+
+    <br />
+  </body>
+</html>
