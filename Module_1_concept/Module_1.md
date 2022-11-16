@@ -158,6 +158,43 @@ Optional are very useful when dealing with potention missing information like da
 
 ## Lambda
 
+Lambdas have been around since Java 8.
+
+Lambdas are all about pfuntional programtion, and funtion.
+
+With lambdas, functions become its own object and can be a return type, or a parameter.
+
+Lmabdas works great with the API Stream Interface in Java. It allows you to go through collections with minimum code.
+
+[Stream Javadoc|https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html]
+
+The function will see are:
+- Map
+- Flatmap
+- Filter
+- Reduce
+
+To follow the flow from old type loop to stream, please refer to below table.
+
+
+| ID | CONCEPT |                                        | PRO               | CON             | CHAINABLE | USE   | EXAMPLE                                                             | RESULT      |
+|----|---------|----------------------------------------|-------------------|-----------------|-----------|-------|---------------------------------------------------------------------|-------------|
+| 0  | No loop | Easiest method, copy/paste de the code | Easy, for beginer | Duplicated code | NO        | NEVER | System. out .println( "Apple" ) ; System. out .println( "Peach" ) ; | Apple Peach |
+|    |         |                                        |                   |                 |           |       |                                                                     |             |
+|    |         |                                        |                   |                 |           |       |                                                                     |             |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
