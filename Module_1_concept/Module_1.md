@@ -13,7 +13,11 @@ To read that bytecode, you need a Java Virtual Machine (JVM).
 [Wiki| https://en.wikipedia.org/wiki/Java_(programming_language)]
 
 
-## New Version
+<details>
+
+ <summary>1 - Versions</summary>
+
+### 1 - Versions
 
 Java now releases a new version every six (6) month.
 
@@ -72,6 +76,8 @@ Long Term Support (LTS) versions are main version supposed to stay and be mainta
 Next LST will be Java 21 (September 2023)
 
 [wiki | https://en.wikipedia.org/wiki/Java_version_history]
+
+</details>
 
 
 ## Variable Scope
