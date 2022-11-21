@@ -8,7 +8,7 @@ public class ScopeExercise {
      * 1. Define variable message; only once
      * 2. Add necessary code to access message variable from another class
      * 3. What is the scope of newMessage
-     * 4. Line 20 (System.out.println( ... );) -> Which variable can we use at this point ? Which one make more sense ?
+     * 4. Line 23 (System.out.println( ... );) -> Which variable can we use at this point ? Which one make more sense ?
      */
 
     /*** INFO

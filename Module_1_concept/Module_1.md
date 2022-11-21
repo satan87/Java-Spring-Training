@@ -91,8 +91,8 @@ The scope of a variable define where in the code a variable can be used.
 
 There are three (3) scopes:
 
-- Global
-  The variable is accessible from anywhere in the code
+- Class
+  The variable is accessible from anywhere in the class
 
 - Function
   The variable is accessible only inside the function, or the class
@@ -101,6 +101,34 @@ There are three (3) scopes:
   The variable is accessible inside the closest curly bracket ({})
 
 See example ...
+
+
+### Static
+
+A class variable, a function, or a class can be static.
+
+A static object will exist only once in memory.
+
+For example, if you declare a static variable for a class, then all instances of this class will share the same value. This value will be in memory only once.
+
+If any instance changes the value, it will be updated for all instances.
+
+
+### Final
+
+All variables can be tag as final.
+
+In this cases, the value of the variables cannot be change. 
+
+We called them constants.
+
+
+*Attention*: If you create a final variable for an object, you cannot change the object itself, but you can change the value of its properties.
+
+```
+final Cat cat = new Cat();
+cat.setWeight(5); // This will works just fine
+```
 
 </details>
 
