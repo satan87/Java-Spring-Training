@@ -2,6 +2,6 @@ package com.nicolas.savoini;
 
 public class Tool {
 
-    private Person person;
-    private String owner;
+    private Person owner;
+    private String name;
 }
