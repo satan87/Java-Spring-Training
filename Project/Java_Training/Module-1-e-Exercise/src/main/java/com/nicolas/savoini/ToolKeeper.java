@@ -2,8 +2,8 @@ package com.nicolas.savoini;
 
 import lombok.Getter;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
+import java.util.*;
 
 @Getter
 public class ToolKeeper {
@@ -12,16 +12,17 @@ public class ToolKeeper {
 
     List<Renting> rents = new ArrayList<>();
 
-    public List<Tool> listAvailableTools() {
+    public int getNumberOfTools() {
 
+        return -1;
+    }
 
+    public List<Tool> listAvailableTools(LocalDate date) {
 
         return new ArrayList<>();
     }
 
-    public List<Tool> listNotAvailableTools() {
-
-
+    public List<Tool> listNotAvailableTools(LocalDate date) {
 
         return new ArrayList<>();
     }
@@ -44,7 +45,7 @@ public class ToolKeeper {
 
     public List<Tool> toolsNeverRented() {
 
-        return new ArrayList<>();
+        return null;
     }
 
     public List<Tool> toolsMostRented(int top) {
@@ -52,14 +53,9 @@ public class ToolKeeper {
         return new ArrayList<>();
     }
 
-    public List<Person> topBorrower() {
+    public Person topBorrower() {
 
-        return new ArrayList<>();
-    }
-
-    public List<Tool> topRenter() {
-
-        return new ArrayList<>();
+        return new Person("A");
     }
 
 }
