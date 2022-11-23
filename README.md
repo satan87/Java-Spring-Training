@@ -10,9 +10,9 @@
   - Exercise
 
 - OOP ~ 4 hours
-  - Interface
   - Inheritance
-  - Exception
+  - Interface
+  - Record
   - Exercise
 
 - Spring ~ 5 hours
