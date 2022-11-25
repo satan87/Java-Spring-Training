@@ -22,7 +22,7 @@ public class Main {
         Sport soccer = new CollectiveSport("Soccer", "Goal", 11);
 
         log.info("Soccer={}", soccer);
-        log.info("Soccer is an instance of {}", soccer.getClass());
+        log.info("Soccer is an instance of {} \n", soccer.getClass());
 
         /**
          * Individual Sport
@@ -31,7 +31,7 @@ public class Main {
         Sport tennis = new IndividualSport("Tennis", "Hit the ball");
 
         log.info("Tennis = " + tennis);
-        log.info("Tennis is an instance of {}", tennis.getClass());
+        log.info("Tennis is an instance of {} \n", tennis.getClass());
 
         /**
          * We can put them both in the same list
@@ -40,6 +40,6 @@ public class Main {
         List<Sport> sports = List.of(soccer, tennis);
 
         log.info("Sports is an instance of {}", sports.getClass());
-        log.info("Sports = {}", sports);
+        log.info("Sports = {} \n", sports);
     }
 }

@@ -1,0 +1,68 @@
+Exercise:
+
+A company ask you to have a record of all apple product they have.
+You need to keep a list of them, and display how many products of each the company have.
+
+Each product has a model name, and a unique  fixed model number
+Each product have one or more properties listed below.
+
+The list of products are:
+
+Phones:
+    - serie 12, 13, 14
+- iPhone
+    - number of camera: 2
+- iPhone Pro
+    - number of camera: 3
+
+iPads:
+    - thickness
+    - size display
+- iPad
+- iPadProd
+    - screen can be HD, or XHD
+- iPadAir
+- iPadMini
+
+Laptop:
+
+- MacbookPro
+    - screen size 14, 16
+- MacBookAir
+    - screens zie 13, 15
+
+
+Desktop:
+    - processor name
+    - processor count
+- iMac
+    - screen size
+- Macpro
+- Macmini
+
+Screens:
+    - size 27, 32
+    - quality HD, XDH
+- StudioDisplay
+
+Phones, iPad and Laptop are considered Mobiles devices.
+Desktop and screens are not.
+The program need to be able to differentiate them.
+
+1. Create all necessary classes to handles all the devices and options below.
+    - Create classes in the exercise package under main folder.
+    - You will have a lot of classes, this is normal
+
+2. Write a utility class to calculate
+    a. number of products
+    b. number of mobile product
+    c. number of iPhones (iPhone + iPhone Pro)  14
+    d. number of laptop with screen equal or larger than 15"
+
+Each method will take two parameters:
+- a List of AppleMaterial
+- A type of statistics (ENUM)
+
+Each method will return a single int
+
+3. Write a test class for the Utility Class
