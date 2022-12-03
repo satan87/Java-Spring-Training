@@ -1,0 +1,64 @@
+Exercise:
+
+In a school, we have three type of persons.
+- The students
+- The teachers
+- The assistants
+
+We have the three class already. They all inherit from the class SchoolPersonal.
+
+The director ask to be able to export the different record in specific format.
+
+We need to be able to export
+- All school personal in CSV format
+    The CSV will be a list of string
+    The first line will be the header
+    One line per personal
+    Special attribute will be on last column with the format Key = Value, separated by ;
+    ex:
+    ID,FIRSTNAME,LASTNAME,ATTRIBUTE
+    1, Nico,Las,promotionYear=2005
+    2,Ahmed,Mo,course=Java;yearsExperience=2
+    3,New,Assistant,department=inscription;salary=50000
+
+
+- Students and Teachers in JSON format
+    Json will be an array, even for one person
+    All attribute should be in the JSON
+    Each element will have a 'Type' attribute, either Student or Teacher
+    ex:
+    [
+        {
+            "type": "Student"
+            "id": 1,
+            "firstName": "Nico",
+            "lastName": "Las",
+            "promotionYear": 2005
+
+        },
+        {
+            "type": "Teacher"
+            "id": 2,
+            "firstName": "Ahmed",
+            "lastName": "Mo",
+            "course": "Java"
+            "yearsExperience": 2
+           }
+    ]
+
+
+
+- Teachers and assistants in XML format
+    XMl will be a list of String
+    Each line with start with <xml> and end with </xml>
+    One string per personal
+    All special attribute should be present
+    ex:
+    <xml><id>2</id><firstName>Ahmed</firstName><lastName>Mo</lastName><course>Java</course><yearsExperience>2</yearsExperience></xml>
+    <xml><id>3</id><firstName>New</firstName><lastName>Assistant</lastName><department>inscription</department><salary>50000</salary></xml>
+
+Using Interface, create the necessary method for the exports.
+
+You CANNOT use a framework to generate CSV.
+You CAN use framework to generate JSON and XML.
+
