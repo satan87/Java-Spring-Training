@@ -10,6 +10,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LambdaExerciseTest {
 
+    /**
+     * For Each
+     */
+    @Test
+    void copy_all_department_to_new_array() {
+
+        // Write code to print on console all departments using For Each
+
+    }
+
 
     /**
      * MAP
@@ -17,7 +27,7 @@ class LambdaExerciseTest {
     @Test
     void list_all_name_ordered() {
 
-        List<String>  = new LambdaExercise().
+        List<String> names = new LambdaExercise()...
 
         assertEquals(List.of("Bob", "Coline", "Chris", "Elaine", "Jane", "Jane", "John", "Marc", "Mary", "Mike", "Nicholas", "Rachel", "Rachel", "Rahul", "Sarah"),
                 ...);
@@ -26,7 +36,7 @@ class LambdaExerciseTest {
     @Test
     void list_all_distinct_name_ordered() {
 
-        List<String>  = new LambdaExercise().
+        List<String> names = new LambdaExercise()...
 
         assertEquals(List.of("Bob", "Coline", "Chris", "Elaine", "Jane", "John", "Marc", "Mary", "Mike", "Nicholas", "Rachel", "Rahul", "Sarah"),
                 ...);
@@ -46,9 +56,9 @@ class LambdaExerciseTest {
      * FILTER
      */
     @Test
-    void list_departement_names_with_only_one_employee() {
+    void list_department_names_with_only_one_employee() {
 
-        List<String>  = new LambdaExercise().
+        List<String> names = new LambdaExercise().
 
         assertEquals(List.of("HR"), ...);
     }
@@ -56,7 +66,7 @@ class LambdaExerciseTest {
     @Test
     void list_sales_person_name_with_less_than_four_letter() {
 
-        List<String>  = new LambdaExercise().
+        List<String> names = new LambdaExercise().
 
         assertEquals(Collections.emptyList(), ...);
     }
@@ -69,7 +79,7 @@ class LambdaExerciseTest {
     @Test
     void count_number_of_letter_for_all_employee_name() {
 
-        int  = new LambdaExercise().
+        int count = new LambdaExercise().
 
         assertEquals(73, ...);
     }

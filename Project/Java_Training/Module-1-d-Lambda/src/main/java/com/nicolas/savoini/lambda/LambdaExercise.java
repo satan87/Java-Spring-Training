@@ -1,8 +1,11 @@
 package com.nicolas.savoini.lambda;
 
 
+import lombok.Getter;
+
 import java.util.List;
 
+@Getter
 public class LambdaExercise {
 
     private final Department accounting = new Department(1,"Accounting");
@@ -13,7 +16,7 @@ public class LambdaExercise {
 
     private Department empty = new Department(6,"Empty");
 
-    private List<Department> departments = List.of(accounting, marketing, hr, it, sales);
+    private List<Department> departments = List.of(accounting, marketing, hr, it, sales, empty);
 
     private List<Person> persons = List.of(
             new Person("John", accounting),
@@ -32,6 +35,8 @@ public class LambdaExercise {
             new Person("Rachel", sales),
             new Person("Jane", sales)
     );
+
+
 
 
     /**

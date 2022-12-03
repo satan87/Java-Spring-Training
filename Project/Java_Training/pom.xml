@@ -15,6 +15,7 @@
         <module>Module-1-d-Lambda</module>
         <module>Module-1-e-Exercise</module>
         <module>Module-2-a-Inheritance</module>
+        <module>Module-2-b-Interface</module>
     </modules>
 
     <properties>

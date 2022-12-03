@@ -57,6 +57,39 @@ It also helps for code re-use.
 
  <summary>See</summary>
 
+A interface defines a protocol for a class to follow.
+
+If a class "agrees" tp follow an interface, it implements it.
+
+```
+public class Car implement Drivable { }
+```
+
+A class Car implements multiple interfaces.
+
+```
+public class FlyingCar implements Drivable, Flyable { }
+```
+
+An Interface can extens one or more interface
+
+```
+
+public Interface Drivable {...}
+
+public Interface Flyable
+
+public Interface FlyAndDrive extends Drivable, Flyable
+
+```
+
+Note the keywork extends for an interface to "extends" another interface.
+
+Interface are usually used to describe a possible action for multiple class.
+
+For example, the Java Interface Serialisable indicates that the class can be serialize, the Interface Comparable means the class can be compare to another object, etc.
+
+
 
 
 </details>

@@ -217,9 +217,9 @@ Optional are very useful when dealing with potention missing information like da
 
 Lambdas have been around since Java 8.
 
-Lambdas are all about pfuntional programtion, and funtion.
+Lambdas are all about functional programing.
 
-With lambdas, functions become its own object and can be a return type, or a parameter.
+With lambdas, functions become an object that can be a return type, or a parameter.
 
 Lmabdas works great with the API Stream Interface in Java. It allows you to go through collections with minimum code.
 
