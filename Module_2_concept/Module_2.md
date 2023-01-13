@@ -58,6 +58,17 @@ When a class extends an abstract class, it has to implements all the extract met
 If it does not, then the class will also be abstract.
 
 
+**Final** class
+
+A final class is a class that cannot be extended.
+
+It is usually used when building framework to make sure the user will not a class that is not supposed to be.
+
+
+Tip:
+
+A class cannot be final and abstract ...
+
 
 </details>
 
@@ -137,6 +148,40 @@ A functional interface can contains default method.
 
  <summary>See</summary>
 
+
+A record is a new type a class. It was created to gratly reduce the amount of code necessary for class holding data.
+
+Data holding class are usually called POJO or DTO. They are classes intended only to carry pieces of data.
+
+The record will be **immutable**.
+
+
+```
+public record Person(String firstName, String lastName) {}; 
+
+```
+
+This simple notation will give you the all argument constructor, getters, equals, hashCode and toString.
+
+As the record is immutable, there is no setters.
+
+
+Attention: getter will be function with the name of field only ( no get in front of it)
+
+```
+Person person = new Person("Nico", "Las");
+System.out.println(person.firstName() + " " + person.lastName());
+```
+
+In a record, it is possible to add
+- Other constructors
+- Static fields
+- Static methods
+
+
+Keep in mind that Record are supposed to reduce boilerplate code for simple data object.
+
+If you need to add constructors, fields and/or methods, you probably need a class.
 
 
 
