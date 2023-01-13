@@ -59,6 +59,8 @@ We need to be able to export
 
 Using Interface, create the necessary method for the exports.
 
+If a class is not concern by an export, it should thrown an error with an explicit message.
+
 You CANNOT use a framework to generate CSV.
 You CAN use framework to generate JSON and XML.
 

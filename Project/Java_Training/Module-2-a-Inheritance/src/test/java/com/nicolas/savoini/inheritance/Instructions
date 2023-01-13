@@ -3,7 +3,7 @@ Exercise:
 A company ask you to have a record of all apple product they have.
 You need to keep a list of them, and display how many products of each the company have.
 
-Each product has a model name, and a unique  fixed model number
+Each product has a model name, and a unique fixed model number
 Each product have one or more properties listed below.
 
 The list of products are:

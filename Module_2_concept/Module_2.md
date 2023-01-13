@@ -47,6 +47,17 @@ Inheritance is use to create smaller object with well define behavior.
 It also helps for code re-use.
 
 
+**Abstract** class
+
+An abstract class is a class that cannot be instanciated.
+
+It usually contains one or more abstract method.
+
+When a class extends an abstract class, it has to implements all the extract method. 
+
+If it does not, then the class will also be abstract.
+
+
 
 </details>
 
@@ -90,6 +101,31 @@ Interface are usually used to describe a possible action for multiple class.
 For example, the Java Interface Serialisable indicates that the class can be serialize, the Interface Comparable means the class can be compare to another object, etc.
 
 
+**Default** method in interface
+
+
+A default method in an interface is a method wih code.
+
+This was created to assure backward compatibility.
+
+
+**Static** method in interface
+
+Interface can also define static method.
+
+It is the same as Default, the implementation of the method will be inside the interface.
+
+The idea is to allow the developer to group method that would make sense to be in the interface.
+
+
+
+**Functional** interface
+
+A functional interface is noted with the annotation @FunctionalInterface
+
+A functional interface can have only one method. If you try to add more it will not compile.
+
+A functional interface can contains default method.
 
 
 </details>
@@ -100,6 +136,8 @@ For example, the Java Interface Serialisable indicates that the class can be ser
 <details>
 
  <summary>See</summary>
+
+
 
 
 </details>

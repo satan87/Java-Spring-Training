@@ -1,8 +1,6 @@
 package com.nicolas.savoini;
 
-import com.nicolas.savoini.inheritance.CollectiveSport;
-import com.nicolas.savoini.inheritance.IndividualSport;
-import com.nicolas.savoini.inheritance.Sport;
+import com.nicolas.savoini.inheritance.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.BasicConfigurator;
 
@@ -41,5 +39,41 @@ public class Main {
 
         log.info("Sports is an instance of {}", sports.getClass());
         log.info("Sports = {} \n", sports);
+
+
+        /**
+         * Abstract Class cannot be instanciated
+         */
+
+        // This will not compile
+//        Sport natation = new NatationSport("Nat", "Nat");
+
+        Sport swimming = new SwimmingSport("Swim", "Swim");
+        Sport synchronizedSwimming = new SynchronizedSwimmingSport("S Nat", "S Nat");
+
+        log.info("SWIM = " + swimming);
+        log.info("SWIM is an instance of {} \n", swimming.getClass());
+        ((NatationSport)swimming).displayPoolSize();
+
+        log.info("S NAT = " + synchronizedSwimming);
+        log.info("S Nat is an instance of {} \n", synchronizedSwimming.getClass());
+        ((NatationSport)synchronizedSwimming).displayPoolSize();
+
+        sports = List.of(soccer, tennis, swimming, synchronizedSwimming);
+        log.info("Sports = {} \n", sports);
+
+
     }
 }
+
+
+/*
+
+                                        SPORT
+                /                       |                   \
+                Collective           Natation            Individual
+                                    /       \
+                               Swimming   SynchronizedS
+
+
+ */
