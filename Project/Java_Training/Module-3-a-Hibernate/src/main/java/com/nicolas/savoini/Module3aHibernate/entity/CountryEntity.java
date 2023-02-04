@@ -14,4 +14,5 @@ public class CountryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
+
 }
