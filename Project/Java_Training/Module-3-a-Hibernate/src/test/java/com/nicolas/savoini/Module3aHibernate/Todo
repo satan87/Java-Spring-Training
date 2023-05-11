@@ -1,0 +1,14 @@
+
+
+0.
+Add 2 countries per continent
+
+1.
+Add New table Continent
+-> ID, Name
+
+2.
+Update Country with Continent Foreign key
+
+3.
+Update Main to do a search on continent
